@@ -109,7 +109,8 @@ func activeAndInvitedOrganizationMemberships(orgName string) []*tfe.Organization
 			Email:        "org_member_1@hashicorp.com",
 			Organization: &tfe.Organization{Name: orgName},
 			User: &tfe.User{
-				ID: "user-orgmember-1",
+				ID:       "user-orgmember-1",
+				Username: "username-1",
 			},
 		},
 		{
@@ -118,7 +119,8 @@ func activeAndInvitedOrganizationMemberships(orgName string) []*tfe.Organization
 			Email:        "org_member_2@hashicorp.com",
 			Organization: &tfe.Organization{Name: orgName},
 			User: &tfe.User{
-				ID: "user-orgmember-2",
+				ID:       "user-orgmember-2",
+				Username: "username-2",
 			},
 		},
 	}
